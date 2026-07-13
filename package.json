@@ -1,0 +1,35 @@
+{
+  "name": "sheji-calc",
+  "version": "0.1.0",
+  "description": "室内设计实用计算工具箱：照度、材料损耗、人体工程学校验（内置国标 GB 50034 / GB 50763 等）",
+  "type": "module",
+  "bin": {
+    "sheji-calc": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/*.test.js",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "interior-design",
+    "室内设计",
+    "照明计算",
+    "照度",
+    "材料估算",
+    "人体工程学",
+    "GB50034",
+    "GB50763",
+    "calculator"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}
